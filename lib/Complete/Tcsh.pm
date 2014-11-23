@@ -84,7 +84,7 @@ _
             pos=>0,
         },
         as => {
-            schema => {'str*', in=>['string', 'array']},
+            schema => ['str*', in=>['string', 'array']],
             default => 'string',
         },
     },
