@@ -72,11 +72,11 @@ because escaping rule and so on are not yet well defined in tcsh.
 _
     args_as => 'array',
     args => {
-        shell_completion => {
-            summary => 'Result of shell completion',
+        completion => {
+            summary => 'Completion answer structure',
             description => <<'_',
 
-Either an array or hash.
+Either an array or hash, as described in `Complete`.
 
 _
             schema=>['any*' => of => ['hash*', 'array*']],
