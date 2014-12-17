@@ -18,6 +18,11 @@ require Complete::Bash;
 
 our %SPEC;
 
+$SPEC{':package'} = {
+    v => 1.1,
+    summary => 'Completion module for tcsh shell',
+};
+
 $SPEC{parse_cmdline} = {
     v => 1.1,
     summary => 'Parse shell command-line for processing by completion routines',
@@ -95,7 +100,7 @@ sub format_completion {
 }
 
 1;
-#ABSTRACT: Completion module for tcsh shell
+#ABSTRACT:
 
 =head1 DESCRIPTION
 
