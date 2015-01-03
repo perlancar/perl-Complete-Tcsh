@@ -138,9 +138,6 @@ Also, unlike bash, currently tcsh does not allow delegating completion to a
 shell function.
 
 
-=head1 TODOS
-
-
 =head1 SEE ALSO
 
 L<Complete>
