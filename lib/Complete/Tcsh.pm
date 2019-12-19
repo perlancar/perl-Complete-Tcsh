@@ -118,15 +118,15 @@ command-line). Unlike bash, tcsh does not (yet) provide something akin to
 C<COMP_POINT> in bash. Command is expected to print completion entries, one line
 at a time.
 
- % cat mycompleter
+ % cat foo-complete
  #!/usr/bin/perl
  use Complete::Tcsh qw(parse_cmdline format_completion);
  use Complete::Util qw(complete_array_elem);
- my ($words, $cword) = parse_cmdline();
+ my ($words, $cword) = @{ parse_cmdline() };
  my $res = complete_array_elem(array=>[qw/--help --verbose --version/], word=>$words->[$cword]);
  print format_completion($res);
 
- % complete -C foo-complete foo
+ % complete foo 'p/*/`foo-complete`/'
  % foo --v<Tab>
  --verbose --version
 
