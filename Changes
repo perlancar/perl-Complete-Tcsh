@@ -1,3 +1,10 @@
+0.030   2019-12-20  Released-By: PERLANCAR; Urgency: low
+
+	- No functional changes.
+
+	- [doc] Fix example in Synopsis (RT#131190).
+
+
 0.02    2015-09-09  Released-By: PERLANCAR
 
 	- No functional changes.
